@@ -1,0 +1,17 @@
+{
+    "interpolation": "Interpolacja {{value}}",
+    "loading": "Ładowanie...",
+    "New": "Nowa",
+    "InProgress": "W trakcie",
+    "Finished": "Zakończona",
+    "Cancelled": "Anulowana",
+    "Accepted": "Zaakceptowana",
+    "All": "Wszystkie",
+    "Internal": "Wewnętrzna",
+    "Outsourcing": "Zewnętrzna",
+    "Active": "Aktywne",
+    "Deactive": "Zakończone",
+    "DataIsEmpty": "Brak Danych",
+    "name": "Nazwa",
+    "counter": "Licznik"
+  }

@@ -1,0 +1,17 @@
+{
+    "interpolation": "Interpolation {{value}}",
+    "loading": "Loading...",
+    "New": "New",
+    "InProgress": "In progress",
+    "Finished": "Finished",
+    "Cancelled": "Cancelled",
+    "Accepted": "Accepted",
+    "All": "All",
+    "Internal": "Internal",
+    "Outsourcing": "Outsourcing",
+    "Active": "Active",
+    "Deactivate": "Finished",
+    "DataIsEmpty": "No Data",
+    "name": "Name",
+    "counter": "Counter"
+  }

@@ -1,0 +1,7 @@
+{
+    "apiUrl": "https://localhost:44391/",
+    "dev": {
+      "enableReduxDevToolsExtension": true
+    }
+  }
+   
