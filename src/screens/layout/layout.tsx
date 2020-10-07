@@ -3,6 +3,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
+  pokedex,
   home,
 } from "../../common/variables/routes";
 import NotFound from "../notFound/notFound";
@@ -19,7 +20,8 @@ const Layout = (): JSX.Element => {
           <CssBaseline />
           <Container className={classes.container}>
             <Switch>
-              <Route exact path={home}/>
+              <Route exact path={pokedex} />
+              <Route exact path={home} />
               <Route component={NotFound} />
             </Switch>
           </Container>
