@@ -8,6 +8,7 @@ import {
 } from "../../common/variables/routes";
 import NotFound from "../notFound/notFound";
 import useStyles from "./layoutStyles";
+import Pokedex from "../pokedex/pokedex";
 
 const Layout = (): JSX.Element => {
   const EditRecruitmentComponent = () => <EditRecruitmentComponent />;
@@ -20,7 +21,7 @@ const Layout = (): JSX.Element => {
           <CssBaseline />
           <Container className={classes.container}>
             <Switch>
-              <Route exact path={pokedex} />
+              <Route exact path={pokedex} component={Pokedex}/>
               <Route exact path={home} />
               <Route component={NotFound} />
             </Switch>

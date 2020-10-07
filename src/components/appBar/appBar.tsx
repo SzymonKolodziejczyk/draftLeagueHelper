@@ -9,7 +9,10 @@ import { Link } from "react-router-dom";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import Languages from "./components/languages/languages";
 import useStyles from "./appBarStyles";
-import { home } from "../../common/variables/routes";
+import { 
+    home,
+    pokedex,
+ } from "../../common/variables/routes";
 import { useTranslation } from "react-i18next";
 
 const AppBar = (): JSX.Element => {
@@ -38,6 +41,18 @@ const AppBar = (): JSX.Element => {
           align="center"
         >
           <Link to={home} className={classes.titleLink}>
+            {t("title")}
+          </Link>
+        </Typography>
+        <Typography
+          component="h1"
+          variant="h6"
+          color="inherit"
+          noWrap
+          className={classes.title}
+          align="center"
+        >
+          <Link to={pokedex} className={classes.titleLink}>
             {t("title")}
           </Link>
         </Typography>
