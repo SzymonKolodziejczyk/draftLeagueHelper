@@ -5,20 +5,15 @@ const PokedexStyles = makeStyles({
       minWidth: 25,
       mx: "auto"
     },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
     pokemonName: {
-      fontSize: 16,
+      fontSize: 14,
       textAlign: 'center',
     },
-    dexNumber: {
+    indexNumber: {
       marginBottom: 12,
       textAlign: 'center',
     },
-    pokemonIcon: {
+    sprite: {
         height: 0,
         paddingTop: '56.25%', // 16:9
         textAlign: 'center',
