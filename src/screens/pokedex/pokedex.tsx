@@ -41,7 +41,7 @@ export default function SimpleCard() {
               image={everyPokemon.bulbasaur.pokemonIcon}
               title="Click for more information" />
             <Typography className={classes.textStyle} color="textSecondary" gutterBottom>
-              {everyPokemon .bulbasaur.indexNumber}
+              {everyPokemon.bulbasaur.indexNumber}
             </Typography>
             <Typography className={classes.textStyle} color="textSecondary">
               {everyPokemon.bulbasaur.pokemonName}
