@@ -9,6 +9,8 @@ import {
 import NotFound from "../notFound/notFound";
 import useStyles from "./layoutStyles";
 import Pokedex from "../pokedex/pokedex";
+import { AppBar } from "@material-ui/core";
+import SideBar from "../../components/sideBar/sideBar";
 
 const Layout = (): JSX.Element => {
   const EditRecruitmentComponent = () => <EditRecruitmentComponent />;
@@ -19,6 +21,8 @@ const Layout = (): JSX.Element => {
       <Router>
         <div className={classes.root}>
           <CssBaseline />
+          <AppBar />
+          <SideBar />
           <Container className={classes.container}>
             <Switch>
               <Route exact path={pokedex} component={Pokedex}/>

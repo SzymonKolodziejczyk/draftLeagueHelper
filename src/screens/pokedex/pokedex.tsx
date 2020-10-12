@@ -2,6 +2,7 @@ import React from 'react';
 import { 
   Card,
   CardMedia,
+  GridList,
   Grid,
   TextField,
   Toolbar
@@ -32,7 +33,7 @@ export default function SimpleCard() {
         />
       </div>
     </Toolbar>
-    <Card className={classes.roots}>
+    <GridList className={classes.roots} cellHeight={200} cols={10}>
       <Card className={classes.root} variant="outlined">
         <Grid container spacing={1}>
           <Grid item xs={1} sm={1} md={1} lg={1}>
@@ -47,12 +48,12 @@ export default function SimpleCard() {
               {everyPokemon.bulbasaur.pokemonName}
             </Typography>
             <Typography className={classes.textStyle} color="textSecondary" gutterBottom>
-              {everyPokemon.bulbasaur.pokemonType} {everyPokemon.bulbasaur.pokemonSecondaryType}
+              {everyPokemon.bulbasaur.pokemonType}
             </Typography>
           </Grid>
-          </Grid>
-          </Card>
-          <Card className={classes.root} variant="outlined">
+        </Grid>
+      </Card>
+      <Card className={classes.root} variant="outlined">
         <Grid container spacing={1}>
           <Grid item xs={1} sm={1} md={1} lg={1}>
             <CardMedia
@@ -66,11 +67,11 @@ export default function SimpleCard() {
               {everyPokemon.ivysaur.pokemonName}
             </Typography>
             <Typography className={classes.textStyle} color="textSecondary" gutterBottom>
-              {everyPokemon.ivysaur.pokemonType} {everyPokemon.ivysaur.pokemonSecondaryType}
+              {everyPokemon.ivysaur.pokemonType}
             </Typography>
           </Grid>
         </Grid>
       </Card>
-    </Card></>
+    </GridList></>
   );
 }

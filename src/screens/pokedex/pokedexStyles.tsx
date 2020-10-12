@@ -1,28 +1,39 @@
 import { fade, makeStyles } from '@material-ui/core/styles';
 
 const PokedexStyles = makeStyles((theme) => ({
-    root: {
-      width: "20%",
-      paddingLeft: "20px",
-      paddingRight: "20px",
+    root: { 
+      display: "flex",
+      minHeight: "16vh",
+      height: "100%",
+      maxHeight: "100%",
+      minWidth: "16vh",
+      width: "100%",
+      maxWidth: "100%",
+      paddingLeft: "25px",
+      paddingRight: "25px",
       marginTop: "3px",
+      margin: "0 auto",
       marginBottom: "3px",
+      alignItems: "center",
+      justify: "center",
+      flexWrap: 'wrap'
     },
     roots: {
       paddingLeft: "3px",
       paddingRight: "3px",
       marginTop: "3px",
-      marginBottom: "3px",
+      marginBottom: "3px"
     },
     textStyle: {
       fontSize: 14,
       margin: "center",
-      textAlign: 'center',
+      textAlign: 'center'
     },
     sprite: {
       width: "80px",
       height: "80px",
       margin: 'center',
+      alignItems: "center"
       },
     searchContainer: {
       display: "flex",
