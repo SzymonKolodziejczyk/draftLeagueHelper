@@ -171,12 +171,12 @@ const SideBar = (): JSX.Element => {
         </Collapse>
         <Divider/>
         <ListItem button onClick={() => handleExpand(5)}>
-          <Tooltip title={t("dashboard") || ""} placement="right">
+          <Tooltip title={t("pokemonDatabase") || ""} placement="right">
             <ListItemIcon>
               <DashboardIcon color="primary" />
             </ListItemIcon>
           </Tooltip>
-          <ListItemText> {t("dashboard")} </ListItemText>
+          <ListItemText> {t("pokemonDatabase")} </ListItemText>
         </ListItem>
         <Collapse in={expand === 5} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>

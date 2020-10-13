@@ -25,7 +25,7 @@ import useStyles from "./appBarStyles";
 import clsx from "clsx";
 import { IThunkDispatch } from "../../store/models/IThunkDispatch";
 import toggleDrawerAction from "../../store/actions/toggleDrawerAction";
-import { home, pokedex } from "../../common/variables/routes";
+import { home } from "../../common/variables/routes";
 import { useTranslation } from "react-i18next";
 import { drawerIsOpenedSelector } from "../../store/selectors/drawerSelector";
 
@@ -52,6 +52,7 @@ const AppBar = (): JSX.Element => {
   };
 
   return (
+    
     <MuiAppBar
       position="absolute"
       className={clsx(
@@ -93,6 +94,7 @@ const AppBar = (): JSX.Element => {
           color="inherit"
           onClick={handleToggleUserMenu}
         >
+          <span style={{ textTransform: "capitalize" }}>{user}</span>
           <ArrowDropDownIcon />
         </Button>
         <Popper
@@ -113,6 +115,8 @@ const AppBar = (): JSX.Element => {
               <Paper>
                 <ClickAwayListener onClickAway={handleCloseUserMenu}>
                   <MenuList autoFocusItem={userMenuOpen} id="menu-list-grow">
+                    {isAuthUser ? (
+                      <>
                         <Link to={home} className={classes.link}>
                           <MenuItem
                             onClick={handleCloseUserMenu}
@@ -122,13 +126,28 @@ const AppBar = (): JSX.Element => {
                           </MenuItem>
                         </Link>
                         <Link
-                          to={pokedex}
+                          to={home}
                           className={classes.link}
-                          onClick={handleCloseUserMenu}
                           color="inherit"
                         >
+                          <MenuItem
+                            onClick={handleCloseUserMenu}
+                            className={classes.link}
+                          >
+                            {t("logout")}
+                          </MenuItem>
                         </Link>
-                    
+                      </>
+                    ) : (
+                      <Link to={home} className={classes.link}>
+                        <MenuItem
+                          onClick={handleCloseUserMenu}
+                          className={classes.link}
+                        >
+                          {t("login")}
+                        </MenuItem>
+                      </Link>
+                    )}
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

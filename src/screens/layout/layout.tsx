@@ -8,8 +8,8 @@ import {
 } from "../../common/variables/routes";
 import NotFound from "../notFound/notFound";
 import useStyles from "./layoutStyles";
-import Pokedex from "../pokedex/pokedex";
-import { AppBar } from "@material-ui/core";
+import Pokedex from "../pokemonDatabase/pokedex/pokedex";
+import AppBar from "../../components/appBar/appBar";
 import SideBar from "../../components/sideBar/sideBar";
 
 const Layout = (): JSX.Element => {

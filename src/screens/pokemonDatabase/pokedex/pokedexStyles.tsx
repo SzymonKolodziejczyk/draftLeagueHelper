@@ -21,8 +21,7 @@ const PokedexStyles = makeStyles((theme) => ({
     roots: {
       paddingLeft: "3px",
       paddingRight: "3px",
-      marginTop: "3px",
-      marginBottom: "3px"
+      marginTop: "3px"
     },
     textStyle: {
       fontSize: 14,
